@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Nhúng CSS vào trang HTML</title>
+    <!--  đề bài:-->
+    <!--  Phần 1: Hãy thay đổi màu sắc của văn bản sử dụng inline-style-->
+    <!--  Phần 2: Hãy thay đổi màu sắc của văn bản sử dụng internal-style-->
+    <!--  Phần 3: Hãy thay đổi màu sắc của văn bản sử dụng external-style-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #tieu-de-2{
+            color: #e67e22;
+        }
+
+        #van-ban-2{
+            color: #27ae60;
+            line-height: 1.6;
+        }
+    </style>
+
+
+</head>
+<body>
+<!--KIỂU LÀM INLINE CSS-->
+<h1 style="color: #2c3e50;">Fun topic</h1>
+<p style=" color: #555555;
+line-height: 1.6;">
+    Life doesn’t always have to be serious. Sometimes, the best moments come from the little things — like laughing with
+    friends over silly jokes,<br>
+    dancing in your room with no music, or enjoying an ice cream on a sunny day.<br>
+    Happiness isn’t something you find at the end of the road; it’s something you create every single day by choosing to
+    smile, even when things aren’t perfect.<br>
+    So, take a deep breath, laugh a little louder, and enjoy the beautiful mess called life.
+ <!--ĐÂY LÀ DÙNG CÁCH INLINE CSS:
+    • CSS được viết trực tiếp trong thẻ HTML, thông qua thuộc tính style.
+    • Áp dụng chỉ cho phần tử đó.-->
+</p>
+<!--_______________________________-->
+<!--KIỂU LÀM Internal CSS-->
+<h1 id="tieu-de-2">The Joy of Small Things</h1> <!--vì trong file html có hai thẻ h1 nên phải cung cấp id cho thẻ để không bị lỗi trùng css-->
+<p id = "van-ban-2">
+    Sometimes, happiness is not about big achievements or expensive gifts.<br>
+    It’s about the small things — like finding a clean pair of socks, catching the last slice of pizza, or finishing a series without spoilers.<br>
+    Life is full of tiny victories, and each one is worth celebrating.<br>
+    So, laugh at the little mishaps, enjoy the random surprises, and remember to cherish every tiny joy.
+<!--ĐÂY LÀ DÙNG CÁCH Internal CSS-->
+    <!--• CSS được viết bên trong file HTML, trong cặp thẻ <style> ... </style>, nằm trong phần <head> của trang.
+         • Áp dụng cho toàn bộ các phần tử trong trang HTML đó.-->
+</p>
+
+<!--_________________________________________-->
+<!--KIỂU LÀM External CSS-->
+<h1 id="tieu-de-3">Laughter is the Best Medicine</h1>
+<p id = "van-ban-3">
+    Stress and worries are part of life, but laughter is the secret weapon.<br>
+    Share a silly joke, watch a funny video, or just make funny faces in the mirror.<br>
+    Even five minutes of laughter can lift your mood and make your day brighter.<br>
+    Remember, life is better when you laugh more and take yourself a little less seriously.
+    <!--DÙNG CÁCH EXTERNAL CSS
+    • CSS được tách ra thành file riêng (đuôi .css) và được liên kết với HTML bằng thẻ <link> trong phần <head>.
+    • Thường dùng trong các website lớn, nhiều trang.-->
+</p>
+
+
+</body>
+</html>
