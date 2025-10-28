@@ -1,0 +1,27 @@
+.highlight {
+    color: #3498db;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+h4 {
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+hr {
+    margin-top: 5px;
+}
+
+p {
+    width: 95%;           /* chiếm 90% chiều ngang màn hình */
+    max-width: 700px;     /* giới hạn chiều rộng tối đa */
+    margin: 0 auto 10px;  /* căn giữa và cách nhau 10px */
+    //text-align: center;   /* chữ nằm chính giữa thẻ p */
+}
