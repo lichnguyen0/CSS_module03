@@ -1,0 +1,85 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header cố định */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1877f2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+header input {
+    padding: 6px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+}
+
+/* Container tổng */
+.container {
+    display: flex;
+    margin-top: 70px; /* chừa chỗ cho header cố định */
+    padding: 20px;
+}
+
+/* Sidebar trái */
+.sidebar-left {
+    width: 20%;
+    padding: 10px;
+}
+
+.sidebar-left ul {
+    list-style: none;
+}
+
+.sidebar-left li {
+    padding: 10px 0;
+    color: #333;
+}
+
+/* Nội dung chính */
+main {
+    width: 60%;
+    padding: 0 20px;
+}
+
+.post {
+    background: #f0f2f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Sidebar phải */
+.sidebar-right {
+    width: 20%;
+    background: #fff;
+    padding: 10px;
+}
+
+.sidebar-right ul {
+    list-style: none;
+}
+
+.sidebar-right li {
+    padding: 8px 0;
+}
+
+/* Màu nền trang */
+body {
+    background-color: #e9ebee;
+}
