@@ -1,0 +1,124 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 10px; /* chỉ cách nhẹ 1 chút với menu */
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* khoảng cách đều giữa các mục */
+    margin: 0; /* xoá margin mặc định */
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Nút login */
+.login {
+    background-color: #555;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #777;
+}
+
+/* Container chính */
+.container {
+    flex: 1;
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar trái */
+.left {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left a:hover {
+    color: #007BFF;
+}
+
+/* Main content */
+.main {
+    width: 60%;
+    padding: 20px;
+}
+
+/* Sidebar phải */
+.right {
+    width: 20%;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.ads {
+    background-color: #ddd;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Giúp footer luôn dính đáy */
+    position: relative;
+    bottom: 15px; /* Cách đáy 15px */
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+}
