@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 2px solid #f4511e;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.highlight {
+    color: #f4511e;
+}
+
+/* Thanh liên kết */
+#head-link {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#head-link a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+}
+
+#head-link a:hover {
+    color: #f4511e;
+    font-weight: bold;
+}
+
+/* Nội dung chính */
+#content {
+    display: flex;
+    justify-content: flex-start; /* căn toàn bộ sang trái */
+    align-items: flex-start;
+    padding: 20px 40px; /* thêm chút khoảng cách lề trái */
+    gap: 20px; /* khoảng cách giữa hai cột */
+}
+
+/* Danh sách video (bên trái) */
+#left-content {
+    width: 30%;
+}
+
+.video-item {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-item p {
+    font-weight: bold;
+    margin: 8px 0 4px;
+}
+
+.video-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.video-item a:hover {
+    color: #f4511e;
+}
+
+/* Video chính + mô tả (bên phải) */
+#right-content {
+    width: 70%;
+    max-width: 800px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Định dạng đoạn mô tả */
+#right-content p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #f4511e;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column; /* xếp dọc */
+        padding: 10px;
+    }
+
+    #left-content,
+    #right-content {
+        width: 100%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cartoon 360</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header">
+    <h1>Phim<span class="highlight">HoạtHình</span></h1>
+</div>
+
+<!-- Thanh liên kết -->
+<div id="head-link">
+    <a href="#">Phim hoạt hình</a> |
+    <a href="#">Phim yêu thích</a> |
+    <a href="#">Nhân vật</a> |
+    <a href="#">Góp ý</a>
+</div>
+
+<!-- Nội dung chính -->
+<div id="content">
+    <!-- Cột trái: danh sách video -->
+    <div id="left-content">
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/KPBgQdpbhBE/hqdefault.jpg" alt="">
+            <p><a href="#" onclick="changeVideo('https://www.youtube.com/embed/KPBgQdpbhBE?si=i_6NYqYZmd8u7L6G')">Series Ăn Cơm Cùng Doraemon #74 | Máy móc thần kỳ</a></p>
+            <span>POPS Kids - 9.106.720 lượt xem</span>
+        </div>
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/JRRVRUzgioE/hqdefault.jpg" alt="">
+            <p><a href="#" onclick="changeVideo('https://www.youtube.com/embed/JRRVRUzgioE?si=IYOZrXFQoA-Ppv3O')">[S6] Doraemon Tiếng Việt - Xài Tiền Cũng Như Không</a></p>
+            <span>POPS Kids - 13.133.051 lượt xem</span>
+        </div>
+
+        <div class="video-item">
+            <img src="https://i.ytimg.com/vi/XmUS7buTjtc/hqdefault.jpg" alt="">
+            <p><a href="#" onclick="changeVideo('https://www.youtube.com/embed/XmUS7buTjtc?si=e3cG0b2YZDFVsCjC')">[S7] Doraemon Tập 360 - Giấc Mơ Kì Lạ Của Ba Về Ông Nội</a></p>
+            <span>POPS Kids - 29.275.000 lượt xem</span>
+        </div>
+    </div>
+
+    <!-- Cột phải: hiển thị video -->
+    <div id="right-content">
+        <iframe id="main-video" width="800" height="450" src="https://www.youtube.com/embed/4CI52V3lQTA?si=wZ-bW31HRXmqaHnr"
+                frameborder="0" allowfullscreen></iframe>
+        <h3>[OFFICIAL] CON RỒNG CHÁU TIÊN | Phim Hoạt Hình Việt từ Biti’s</h3>
+        <p>
+            CON RỒNG CHÁU TIÊN là dự án phim hoạt hình, được kể lại với tất cả tình yêu dành cho văn hoá dân gian. Dự án được khởi xướng & thực hiện bởi thương hiệu nâng niu giá trị Việt - Biti’s, hợp tác với các đơn vị sản xuất & sáng tạo bao gồm: Hãng Phim Trẻ, Redder Advertising, RedCat Motion, Freaky Motion, Digipost, cùng Novel Production, và được cố vấn nội dung bởi nhà sử học Dương Trung Quốc.
+            Bộ phim được hoàn thành với 180 ngày tâm huyết, hơn 10.000 giờ sáng tạo của hơn 100 nghệ sĩ xuất phát từ mong ước làm sống lại câu chuyện cội nguồn, để truyền tải tốt hơn các bài học cốt lõi của văn hóa Việt. Đó là giá trị của sự lao động, chinh phục thiên nhiên, lòng tri ân, sự đoàn kết, tình yêu thương “đồng bào” và niềm tự hào dân tộc.
+            Với những tình tiết vô cùng đặc sắc, hấp dẫn, hi vọng bộ phim có thể “chạm” đến các em thiếu nhi Việt Nam. Để 10 – 20 năm nữa, mỗi đứa trẻ Việt khi lớn lên vẫn luôn tự hào mình là nòi giống Tiên Rồng.
+            Đây là một dự án trong chuỗi dự án 20 năm – Với Biti’s, bé thêm yêu văn hóa dân gian.
+        </p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    © 2025 PhimHoatHinh.vn | Thiết kế cho bài tập thực hành HTML & CSS
+</div>
+
+<!-- Script thay đổi video -->
+<script>
+    function changeVideo(url) {
+        document.getElementById("main-video").src = url;
+    }
+</script>
+</body>
+</html>
