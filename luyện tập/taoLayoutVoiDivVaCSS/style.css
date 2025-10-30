@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+/*1.bắt đầu cài css thuộc tính header*/
+#header {
+    background: blanchedalmond;
+    height: 100px; /*ví dụ có độ cao 100px*/
+    width: 100%; /*rộng của vùng header 100% trình duyệt*/
+}
+
+/*2. thiết các đặt quy tắc css cho vùng main*/
+#main {
+    background: #2c3e50;
+    height: 500px; /*giả sử chiều cao là 500px*/
+    width: 70%; /*độ rộng phần men là 70%*/
+    float: left; /*tại sao sử dụng thuộc tính float đọc kỹ ở bước 3*/
+
+}
+
+/*3.thiết đặt các thuộc tính cho side bar*/
+#sidebar {
+    background: aqua;
+    height: 500px; /*giả sử độ cao của sidebar bằng độ cao cảu phần main 500px*/
+    width: 30%; /*và độ rộng sẽ chiếm phần còn lại tức là 30% của trình duyệt*/
+    float: left; /*tại sao sử dụng thuộc tính float đọc kỹ ở bước 3*/
+}
+
+/*quan sát chạy thử kết quả trên trình duyệt, trong trường hợp này quan sát phần
+sidebar nhảy xuống dưới mà không hiển thị ở trong phần trống còn lại
+tại sao lại như vậy? đây là thuộc tính cơ bản của thẻ div. thẻ div là một block
+và nó sẽ chiếm toàn bộ chiều rộng của trình duyệt. để có thể đưa phần sidebar lên
+ở vị trí trống còn lại ở bên phải của phần main chúng ta sẽ sử dụng thuộc tính FLOAT
+cho 2 thẻ main và sidebar*/
+
+
+/*4. thiết đặt các thuộc tính cho thẻ footer*/
+#footer {
+    background: brown;
+    height: 100px; /*giả sử độ cao của footer là 100px;*/
+    width: 100%;  /*và rộng của là 100%*/
+    clear: both; /*tại sao sử dụng clear đọc kỹ ở phần bên dưới*/
+}
+
+/*quan sát kết quả, trong trường hợp này phân footer không xuất hiện, bởi vì nó không
+hiển thị đúng vị trí mà chúng ta mong muốn, phần footer đã nhảy lên ngay sau phần header,
+bởi vì thẻ main và thẻ sidedbar có sử dụng thuột tính float nên nó đã được nhấc lên
+tách khỏi luồng block và nằm bên trên luồng block ( hãy tưởng tượng vui lúc này giống như thằng main và sidebar đang ngồi trên đầu thằng footer vậy)
+nên main và sidebar không chiếm phần nội dung của footer và phần footer bị đẩy lên trước.*/
+
+/*Để làm mất hiệu ứng này phần footer ta sẽ sử dụng thuộc tính CLEAR và giá trị là both
+có nghĩa là thuộc tính này không cho phép các thẻ float khác xuất hiện ở hai bên
+trái phải của footer.*/
+
+
+
